@@ -1,0 +1,89 @@
+$black : #07000c;
+$withe : #E8F7D7;
+$green_dark : #022B20;
+$green1 : #19AC54;
+$green2 : #808000;
+
+section{
+  display: block;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.container-new-section{
+  display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    flex-direction: row;
+    align-content: flex-start;
+    align-items: flex-start;
+    padding-top: 2vh;
+    
+    
+    
+}
+
+.new-section{
+  display: inline-block;
+  text-decoration: none;
+  background-color: $withe;
+  width: 10vw;
+  height: 20vh;
+  margin: 10px;
+  padding: 5vh;
+  border-radius: 10px;
+  transition-property: all;
+    transform: scale(1);
+}
+.new-section:hover{
+  border: 0px $black solid;
+      transition-duration: 0.25;
+      transform: scale(1.04);
+    
+    
+}
+
+.text-new-section {
+  font-size: 3vh;  
+  font-weight: bold;
+  color: $black;
+  display: flex;
+  justify-content: center;
+}
+// @media(max-width: 800px){
+//   .container-new-section{
+//     flex-direction: row;
+//     align-content: flex-start;
+//     align-items: flex-start;
+//     display: flex;
+//     justify-content: center;
+//     flex-wrap: wrap;
+//     width: vw;
+//     height: auto;
+//     margin: auto;
+//     padding: auto;
+//   }
+// 
+@media (max-width: 768px) {
+  .container-new-section {
+    flex-direction: row;
+    .new-section{
+      width: 15vw;
+      height: 5vh;
+      }
+  }
+}
+
+@media (max-width: 480px) {
+  .new-section{
+    width: 8vw;
+    height: 12vh;
+    }
+  .container {
+    flex-direction: column;
+  }
+  .button-banner{
+    top: 30vh;
+  }
+}

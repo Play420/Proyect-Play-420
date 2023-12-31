@@ -1,0 +1,48 @@
+$black : #07000c;
+$withe : #E8F7D7;
+$green_dark : #022B20;
+$green1 : #19AC54;
+$green2 : #808000;
+
+footer{
+  background-color: rgb(2, 43, 32, .5);
+  backdrop-filter: blur(5px);
+
+  div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .conten-footer{
+    display: flex;
+    justify-content: center;    
+  }
+
+  .icon-social{
+    width: 5vh;
+    margin-right: 2vh;
+    margin-left: 2vh;
+    margin-top: 1.5vh;
+    margin-bottom: 1vh;
+    transition-property: all;
+    transform: scale(1);
+  }
+
+  .icon-social:hover{
+    transition-duration: 0.25;
+    transform: scale(1.08);
+  }
+}
+
+@media (max-width: 800px) {
+  footer{
+    display: flex;
+    justify-content: center;    
+    .icon-social{
+      width: 5vw;
+      height: auto;
+    }
+  }
+}

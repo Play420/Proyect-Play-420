@@ -1,0 +1,27 @@
+@use 'header';
+@use 'videos';
+@use'responsive-movil';
+@use 'carrete';
+@use 'footer';
+@use 'banner-web';
+@use 'scroll-horizontal';
+@import'banner-web';
+
+
+$black : #07000c;
+$withe : #E8F7D7;
+$green_dark : #022B20;
+$green1 : #19AC54;
+$green2 : #808000;
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: $black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+

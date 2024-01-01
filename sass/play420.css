@@ -373,7 +373,7 @@ div .button-banner:hover {
 @media (max-width: 800px) {
   div .banner {
     background-size: 100% 100%;
-    width: 100%;
+    width: 90vw;
     height: auto;
   }
 }
@@ -392,7 +392,7 @@ div .ico-play {
 @media (max-width: 768px) {
   .banner {
     background-size: 100% auto;
-    width: 100%;
+    width: 90vw;
     height: auto;
   }
   .button-banner {
@@ -428,7 +428,7 @@ div .ico-play {
   }
   .banner {
     background-size: 100% auto;
-    width: 100%;
+    width: 90vw;
     height: auto;
   }
 }
@@ -594,7 +594,7 @@ div .button-banner:hover {
 @media (max-width: 800px) {
   div .banner {
     background-size: 100% 100%;
-    width: 100%;
+    width: 90vw;
     height: auto;
   }
 }
@@ -613,7 +613,7 @@ div .ico-play {
 @media (max-width: 768px) {
   .banner {
     background-size: 100% auto;
-    width: 100%;
+    width: 90vw;
     height: auto;
   }
   .button-banner {
@@ -649,7 +649,7 @@ div .ico-play {
   }
   .banner {
     background-size: 100% auto;
-    width: 100%;
+    width: 90vw;
     height: auto;
   }
 }

@@ -7,12 +7,18 @@ $green2 : #808000;
 
 #scroll-horizontal{
   margin-top: 4vw;
+  width: 90vw;
+  
+height: auto;
+margin-left: auto;
+margin-right: auto;
+  
 }
 
 .contenedor-detalles{
 display: flex;
 overflow-x: auto;
-width: 95%;
+width: 100%;
 height: auto;
 margin-left: auto;
 margin-right: auto;
@@ -22,7 +28,7 @@ border-radius: 15px;
 
 
 .contenedor-detalles::-webkit-scrollbar-thumb{
-  background-color: $withe;
+  background-color: $green1;
   border-radius: 15px;
   
 }
@@ -38,11 +44,7 @@ border-radius: 15px;
   display:flex ;
   transition-property: all;
     transform: scale(1);
-  :hover{
-      transition-duration: 0.25;
-        transform: scale(1.002);
-    
-  }
+  
   img{
     background: #000;
   display: flex;
@@ -60,10 +62,16 @@ justify-content:start ;
 color: floralwhite;
 }
 
+.txt-scroll{
+  color: $withe;
+  
+  
+}
+
 @media(max-width:768px){
   .detalle{
     img{
-    width: 30vw;
+    width: 40vw;
     height: auto;
     margin: 1vh;
     border-radius: 10px;

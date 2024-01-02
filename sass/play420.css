@@ -301,7 +301,7 @@ footer .icon-social:hover {
   background-image: url(/assets/img/banner-web.png);
   background-size: 100% auto;
   width: 90vw;
-  height: auto;
+  height: 30vw;
   padding: 0;
   margin-left: auto;
   margin-right: auto;
@@ -313,7 +313,7 @@ footer .icon-social:hover {
   color: #E8F7D7;
   background: rgba(7, 0, 12, 0.4);
   backdrop-filter: blur(5px);
-  border-radius: 15px;
+  border-radius: 0px;
 }
 
 .ico-play {
@@ -340,7 +340,6 @@ div .button-banner {
   background: #19AC54;
   backdrop-filter: blur(5px);
   border: 0px solid #07000c;
-  box-shadow: inset -2px -2px 1px 2px rgba(7, 0, 12, 0.5);
   font-weight: 900;
   color: #07000c;
   align-items: center;
@@ -357,8 +356,9 @@ div .button-banner a:link {
 }
 div .button-banner:hover {
   background: rgba(7, 0, 12, 0.5);
+  border: #19AC54 0.1px solid;
   transition-duration: 0.25;
-  transform: scale(1.08);
+  transform: scale(1.03);
 }
 @media (max-width: 1024px) {
   div .button-banner {
@@ -522,7 +522,7 @@ div .ico-play {
   background-image: url(/assets/img/banner-web.png);
   background-size: 100% auto;
   width: 90vw;
-  height: auto;
+  height: 30vw;
   padding: 0;
   margin-left: auto;
   margin-right: auto;
@@ -534,7 +534,7 @@ div .ico-play {
   color: #E8F7D7;
   background: rgba(7, 0, 12, 0.4);
   backdrop-filter: blur(5px);
-  border-radius: 15px;
+  border-radius: 0px;
 }
 
 .ico-play {
@@ -561,7 +561,6 @@ div .button-banner {
   background: #19AC54;
   backdrop-filter: blur(5px);
   border: 0px solid #07000c;
-  box-shadow: inset -2px -2px 1px 2px rgba(7, 0, 12, 0.5);
   font-weight: 900;
   color: #07000c;
   align-items: center;
@@ -578,8 +577,9 @@ div .button-banner a:link {
 }
 div .button-banner:hover {
   background: rgba(7, 0, 12, 0.5);
+  border: #19AC54 0.1px solid;
   transition-duration: 0.25;
-  transform: scale(1.08);
+  transform: scale(1.03);
 }
 @media (max-width: 1024px) {
   div .button-banner {

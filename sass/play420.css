@@ -194,35 +194,36 @@ section {
 
 .container-new-section {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  width: 90vw;
+  width: 95vw;
   height: auto;
-  flex-direction: row;
-  align-content: flex-start;
-  align-items: flex-start;
   padding-top: 2vh;
   margin-right: auto;
   margin-left: auto;
+  justify-content: space-around;
 }
 
 .new-section {
-  display: inline-block;
+  display: flex;
   text-decoration: none;
-  background-color: #E8F7D7;
-  width: 10vw;
-  height: 20vh;
-  margin: 10px;
-  padding: 5vh;
+  width: 19vw;
+  height: auto;
+  margin: 1vw;
   border-radius: 10px;
   transition-property: all;
   transform: scale(1);
 }
+.new-section img {
+  width: 19vw;
+  height: auto;
+  border-radius: 10px;
+}
 
-.new-section:hover {
-  border: 0px #07000c solid;
+.new-section img:hover {
+  border: 0px #19AC54 dashed;
+  z-index: 10;
   transition-duration: 0.25;
-  transform: scale(1.04);
+  transform: scale(1.03);
 }
 
 .text-new-section {
@@ -238,20 +239,9 @@ section {
     flex-direction: row;
   }
   .container-new-section .new-section {
-    width: 15vw;
-    height: 5vh;
-  }
-}
-@media (max-width: 480px) {
-  .new-section {
-    width: 8vw;
-    height: 12vh;
-  }
-  .container {
-    flex-direction: column;
-  }
-  .button-banner {
-    top: 30vh;
+    width: 18vw;
+    height: auto;
+    padding: 3vh;
   }
 }
 footer {
@@ -298,7 +288,7 @@ footer .icon-social:hover {
   align-items: center;
   justify-items: center;
   justify-content: flex-end;
-  background-image: url(/assets/img/banner-web.png);
+  background-image: url(/assets/img/miniaturas/soutpark-port.png);
   background-size: 100% auto;
   width: 90vw;
   height: 30vw;
@@ -488,7 +478,7 @@ div .ico-play {
 .detalle img {
   background: #000;
   display: flex;
-  width: 18vw;
+  width: 19vw;
   height: auto;
   margin: 1vh;
   border-radius: 15px;
@@ -519,7 +509,7 @@ div .ico-play {
   align-items: center;
   justify-items: center;
   justify-content: flex-end;
-  background-image: url(/assets/img/banner-web.png);
+  background-image: url(/assets/img/miniaturas/soutpark-port.png);
   background-size: 100% auto;
   width: 90vw;
   height: 30vw;

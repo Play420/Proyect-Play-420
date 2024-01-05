@@ -44,16 +44,23 @@ border-radius: 15px;
   display:flex ;
   transition-property: all;
     transform: scale(1);
+
   
   img{
     background: #000;
   display: flex;
-  width: 18vw;
+  width: 19vw;
   height: auto;
   margin: 1vh;
   border-radius: 15px;
   }
 }
+
+// .detalle img:hover{
+//   border: 1px $green1 solid;
+//       transition-duration: 0.25;
+//       transform: scale(1);
+//     }
 
 .txt{
   margin-left: 11vh;

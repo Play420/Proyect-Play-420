@@ -71,10 +71,15 @@ section{
   .container-new-section {
     flex-direction: row;
     .new-section{
-      width: 18vw;
+      width: 29vw;
       height: auto;
-      padding: 3vh;
+      img{
+        width: 29vw;
+        height: auto;
+        border-radius: 10px;
       }
+      }
+
   }
 }
 

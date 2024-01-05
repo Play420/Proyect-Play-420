@@ -239,9 +239,13 @@ section {
     flex-direction: row;
   }
   .container-new-section .new-section {
-    width: 18vw;
+    width: 29vw;
     height: auto;
-    padding: 3vh;
+  }
+  .container-new-section .new-section img {
+    width: 29vw;
+    height: auto;
+    border-radius: 10px;
   }
 }
 footer {
@@ -304,6 +308,13 @@ footer .icon-social:hover {
   background: rgba(7, 0, 12, 0.4);
   backdrop-filter: blur(5px);
   border-radius: 0px;
+}
+.banner .text-banner h2 {
+  padding: 0;
+  margin: 0;
+}
+.banner .text-banner p {
+  font-size: 13px;
 }
 
 .ico-play {
@@ -399,6 +410,16 @@ div .ico-play {
   .ico-play {
     width: 3vh;
     height: auto;
+  }
+  .text-banner {
+    border-radius: 10px;
+  }
+  .text-banner h2 {
+    padding: 0;
+    margin: 0;
+  }
+  .text-banner p {
+    font-size: 11px;
   }
 }
 @media (max-width: 480px) {
@@ -526,6 +547,13 @@ div .ico-play {
   backdrop-filter: blur(5px);
   border-radius: 0px;
 }
+.banner .text-banner h2 {
+  padding: 0;
+  margin: 0;
+}
+.banner .text-banner p {
+  font-size: 13px;
+}
 
 .ico-play {
   width: 100vw;
@@ -620,6 +648,16 @@ div .ico-play {
   .ico-play {
     width: 3vh;
     height: auto;
+  }
+  .text-banner {
+    border-radius: 10px;
+  }
+  .text-banner h2 {
+    padding: 0;
+    margin: 0;
+  }
+  .text-banner p {
+    font-size: 11px;
   }
 }
 @media (max-width: 480px) {

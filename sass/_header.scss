@@ -14,13 +14,14 @@ header{
   align-items: center;
   background-color: rgb(7, 0, 12,.7);
   backdrop-filter: blur(5px);
-
+  a{
+    margin-top: .3vw;
+    padding:0;
+  }
   .logo{
-    width:8vw; 
+    width:7vw; 
     height: auto;
-    margin-top:auto;
-    margin-bottom: -.5vw;
-    margin-left:0vh;
+    margin: auto;
     
   }
   // .logo2{
@@ -30,49 +31,45 @@ header{
   
 
 .botones{
+  width: auto;
+  height: auto;
+  font-size: 13px;
   
-  padding: 1vh;
-  height: 5vh;
   
-  
-  
-  .index{
-    height: 4vh;
-    width: 15vh;
+  .button-header{
+    height: auto;
+    width: auto;
     background-color: $green1;
     color: $black;
     border-radius: 10px;
     border: 0px $green1;
-    padding: 0px;
-    margin-left: 1vh;
-    margin-right: 1vh;
-    margin-top: .5vh;
     transition-property: all;
     transform: scale(1);
     font-weight: bold;
+    text-decoration: none;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
     }
-    .index:hover{
-      background-color: $green_dark;
+    .button-header:hover{
       color:$withe;      
       font-weight: bold;
-      border: 0px $black solid;
-      transition-duration: 0.25;
-      transform: scale(1.08);
+      background: rgb(7, 0, 12, .5);
+    border: $green1 .1px solid;
+    transition-duration: 0.25;
+    transform: scale(1.03);
     }
     
     
 }
 @media(max-width: 800px){
   .botones{
-    padding: 1vh;
+    width: auto;
   height: auto;
-    .index{
+    .button-header{
       width: auto;
       height: auto;
-      padding-top: .5vh;
-      padding-bottom: .5vh;
-      padding-left: 1.5vw;
-      padding-right: 1.5vw;
     }
   }
   // .logo{
@@ -86,13 +83,15 @@ header{
 }
 }
 @media (max-width: 768px) { 
+  header{
+    padding: 1vh;
+  }
   .botones{
-    padding: 2vh;
+    width: auto;
   height: auto;
-    .index{
+    .button-header{
       width: auto;
       height: auto;
-      padding: 1.5vw;
     }
   }
   .logo{
@@ -106,12 +105,12 @@ header{
 
 @media(max-width: 480px){
   .botones{
-    padding: 1vh;
+    width: auto;
   height: auto;
-    .index{
+    .button-header{
+      
       width: auto;
       height: auto;
-      padding: 1.5vw;
     }
   }
   

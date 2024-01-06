@@ -8,52 +8,52 @@ header {
   background-color: rgba(7, 0, 12, 0.7);
   backdrop-filter: blur(5px);
 }
+header a {
+  margin-top: 0.3vw;
+  padding: 0;
+}
 header .logo {
-  width: 8vw;
+  width: 7vw;
   height: auto;
-  margin-top: auto;
-  margin-bottom: -0.5vw;
-  margin-left: 0vh;
+  margin: auto;
 }
 header .botones {
-  padding: 1vh;
-  height: 5vh;
+  width: auto;
+  height: auto;
+  font-size: 13px;
 }
-header .botones .index {
-  height: 4vh;
-  width: 15vh;
+header .botones .button-header {
+  height: auto;
+  width: auto;
   background-color: #19AC54;
   color: #07000c;
   border-radius: 10px;
   border: 0px #19AC54;
-  padding: 0px;
-  margin-left: 1vh;
-  margin-right: 1vh;
-  margin-top: 0.5vh;
   transition-property: all;
   transform: scale(1);
   font-weight: bold;
+  text-decoration: none;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
 }
-header .botones .index:hover {
-  background-color: #022B20;
+header .botones .button-header:hover {
   color: #E8F7D7;
   font-weight: bold;
-  border: 0px #07000c solid;
+  background: rgba(7, 0, 12, 0.5);
+  border: #19AC54 0.1px solid;
   transition-duration: 0.25;
-  transform: scale(1.08);
+  transform: scale(1.03);
 }
 @media (max-width: 800px) {
   header .botones {
-    padding: 1vh;
-    height: auto;
-  }
-  header .botones .index {
     width: auto;
     height: auto;
-    padding-top: 0.5vh;
-    padding-bottom: 0.5vh;
-    padding-left: 1.5vw;
-    padding-right: 1.5vw;
+  }
+  header .botones .button-header {
+    width: auto;
+    height: auto;
   }
   header .logo {
     display: block;
@@ -63,14 +63,16 @@ header .botones .index:hover {
 }
 
 @media (max-width: 768px) {
-  .botones {
-    padding: 2vh;
-    height: auto;
+  header {
+    padding: 1vh;
   }
-  .botones .index {
+  .botones {
     width: auto;
     height: auto;
-    padding: 1.5vw;
+  }
+  .botones .button-header {
+    width: auto;
+    height: auto;
   }
   .logo {
     display: block;
@@ -81,13 +83,12 @@ header .botones .index:hover {
 }
 @media (max-width: 480px) {
   .botones {
-    padding: 1vh;
-    height: auto;
-  }
-  .botones .index {
     width: auto;
     height: auto;
-    padding: 1.5vw;
+  }
+  .botones .button-header {
+    width: auto;
+    height: auto;
   }
 }
 .txt-portada {

@@ -105,7 +105,6 @@ header .botones .button-header:hover {
 .txt-video {
   display: flex;
   flex-direction: column;
-  font-size: 1.5vw;
   margin: 2vw;
 }
 
@@ -129,12 +128,13 @@ header .botones .button-header:hover {
 
 .h2 {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   width: 90vw;
   color: #E8F7D7;
   margin-left: auto;
   margin-right: auto;
-  font-size: 16px;
+  margin-bottom: 0.5vw;
+  font-size: 20px;
 }
 
 .container1 {
@@ -185,50 +185,119 @@ header .botones .button-header:hover {
 }
 
 .scroll-episodes {
-  background-color: #19AC54;
   border-radius: 10px;
   width: 90vw;
   height: auto;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 5vw;
+  overflow-y: auto;
+  display: flex;
 }
 
 .bg-img {
   width: 25vw;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .episode {
   background-color: #07000c;
+  border-radius: 10px;
   color: #E8F7D7;
   width: 25vw;
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 1vw;
+  border-bottom: 1px solid #E8F7D7;
 }
 
 .container-details {
-  background-color: #19AC54;
+  display: flex;
+  justify-content: space-around;
 }
 
 .detail {
+  border-radius: 5px;
+  text-align: center;
   width: 5vw;
   height: auto;
-  background-color: #07000c;
+  border: 1px solid #19AC54;
   color: #E8F7D7;
+  font-weight: bold;
+}
+
+.resume {
+  text-align: center;
 }
 
 .buton-download {
   background-color: #19AC54;
   color: #E8F7D7;
   text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+  color: #07000c;
+  font-weight: bold;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  border-radius: 5px;
+}
+
+.scroll-episodes::-webkit-scrollbar-thumb {
+  background-color: #19AC54;
+  border-radius: 15px;
+}
+
+.scroll-episodes::-webkit-scrollbar {
+  width: 15px;
+  height: 2vh;
+}
+
+.scroll-episodes::-webkit-scrollbar-track {
+  background-color: #07000c;
+}
+
+.buton-download:hover {
+  color: #E8F7D7;
+  font-weight: bold;
+  background: rgba(7, 0, 12, 0.5);
+  border: #19AC54 0.1px solid;
+  transition-duration: 0.25;
+  transform: scale(1.03);
 }
 
 @media (max-width: 768px) {
+  .txt-descripcion {
+    font-size: 14px;
+  }
+  .h2 {
+    font-size: 18px;
+    justify-content: center;
+  }
   .scroll-episodes {
     background-color: transparent;
-    border: 1px solid #19AC54;
+    border-top: 1px solid #E8F7D7;
+    margin-bottom: 5vw;
+    display: block;
+    overflow-y: auto;
+    height: 100vw;
+  }
+  .scroll-episodes P {
+    color: #E8F7D7;
+  }
+  .scroll-episodes::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 15px;
+  }
+  .scroll-episodes::-webkit-scrollbar {
+    width: 0px;
+    height: 0vh;
+  }
+  .scroll-episodes::-webkit-scrollbar-track {
+    background-color: transparent;
   }
   .bg-img {
+    width: 30vw;
     border-radius: 5px;
   }
   .episode {
@@ -237,7 +306,9 @@ header .botones .button-header:hover {
     padding: 2vw;
     border-radius: 5px;
     border: 1px solid #19AC54;
-    margin-bottom: 2.5vw;
+    margin-top: 2vw;
+    margin-left: auto;
+    margin-right: auto;
   }
   .container-details {
     background-color: transparent;
@@ -257,22 +328,19 @@ header .botones .button-header:hover {
     padding-right: 0.4vw;
   }
   .resume {
-    font-size: 10px;
+    width: 48vw;
+    height: auto;
+    font-size: 12px;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
   .buton-download {
     color: #07000c;
     font-weight: bold;
-    padding: 1vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
     border-radius: 5px;
-  }
-  .buton-download:hover {
-    color: #E8F7D7;
-    font-weight: bold;
-    background: rgba(7, 0, 12, 0.5);
-    border: #19AC54 0.1px solid;
-    transition-duration: 0.25;
-    transform: scale(1.03);
   }
 }
 @media (max-width: 800px) {

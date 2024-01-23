@@ -102,15 +102,17 @@ header .botones .button-header:hover {
 }
 .txt-portada h2 {
   margin: 0;
+  margin-top: 0vw;
   margin-bottom: 1vw;
 }
 .txt-portada p {
   margin: 0;
-  margin-bottom: 2vw;
+  margin-bottom: 1vw;
 }
 .txt-portada ul {
   border-left: 1px solid #19AC54;
   margin: 0;
+  font-size: 12px;
 }
 
 .txt-video {
@@ -297,6 +299,7 @@ header .botones .button-header:hover {
     margin-right: auto;
   }
   .txt-portada h2 {
+    margin-top: 2vw;
     margin-bottom: 2vw;
   }
   .txt-portada p {

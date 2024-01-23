@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/img/1x/play.png" type="image/x-icon">
+    <link rel="stylesheet" href="/sass/play420.css">
+    <title>Saw X</title>
+</head>
+<body>
+  <header class="header" id="header">
+    <a type="button"  href="/index.html" >
+        <img  class="logo" src="/assets/img/ico.png" alt="logo">
+    </a>
+    <div class="botones">
+        <a href="/peliculas.html"class="button-header" src="/peliculas.html">
+                <font>
+                    Peliculas
+                </font>
+        </a>
+        <a href="/series.html" class="button-header">
+                <font>
+                    Series
+                </font>
+        </a>
+    </div>
+</header>
+  <main>
+    <article>
+      <section>
+        <!--P O R T A D A-->
+        <div class="portada-video">
+            <img class="img-portada" src="/peliculas/sawx/assets/img/sawxBan.webp" alt="">
+            <div class="txt-portada ">
+                <h2 class="">
+                    Saw X
+                </h2>
+                <p class="txt-descripcion">
+                    La séptima temporada de "Rick and Morty" se estrenó el 15 de octubre de 2023 y concluyó el 17 de diciembre de 2023. Esta temporada promete venganza, nuevas voces y un sinfín de posibilidades. Se centra en la incansable búsqueda de Rick Prime, con tramas llenas de diversión, giros inesperados y toques de intriga en cada episodio.
+                    </p>
+                    <ul>
+                        <li>Audio: [ Español ] [ Inglés ]
+                            </li>
+                        <li>Sub: [ Español ] [ Inglés ]  
+                             </li>
+                        <li>Resolución: 1920x1080p 
+                            </li>
+                        <li>Almacenamiento: 2.87 GB</li>
+                    </ul>
+            </div>
+        </div>
+    </section>
+    <section><!--scroll preview-->
+        <div id="container" class="container">
+            <div id="content">
+                <div style="display: flex;">
+                    <img src="/peliculas/sawx/assets/img/sawxBan.webp" alt="">
+                </div>
+            </div>
+            <div id="content">
+                <div style="display: flex;">
+                    <img src="/peliculas/sawx/assets/img/sawx1.webp" alt="">
+                </div>
+            </div>
+            <div id="content">
+                <div style="display: flex;">
+                    <img src="/peliculas/sawx/assets/img/sawx2.jpg" alt="">
+                </div>
+            </div>
+            
+            
+        </div>
+            <div class="slides">
+                <button id="slideBack" type="button"> < </button>
+                <button id="slide" type="button"> > </button>
+            </div>
+      </section>
+      <section><!--download section-->
+        <div class="episode" style="width:50vw; margin-left: auto; margin-right: auto;">
+            <div class="img.details">
+                    <img class="bg-img" style="width: 50vw;" src="/peliculas/sawx/assets/img/sawxBan.webp" alt="ep.1">
+                <div class="container-details">
+                    <div class="detail">2023</div>
+                    <div class="detail">3.10Gb</div>
+                    <div class="detail">FHD</div>
+                </div>
+            </div>
+            <div class="resume">
+                <p>
+                    <h4>
+                        Saw X
+                    </h4>
+                    <a class="buton-download" href="https://exe.io/sawx">
+                        Download
+                    </a>
+                </p>
+            </div>
+        </div>
+      </section>
+      <section>
+        <div>
+            <div><p>Mirar ahora.</p></div>
+            <div>
+
+            </div>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer>
+    <div class="content-footer">
+        <div>
+            <a href=""><img src="/assets/img/social-media/Facebook.png" alt="facebook" class="icon-social"></a>
+            <a href=""><img src="/assets/img/social-media/instagram.png" alt="instagram" class="icon-social"></a>
+            <a href=""><img src="/assets/img/social-media/x.png" alt="x" class="icon-social"></a>
+            <a href=""><img src="/assets/img/social-media/pinterest.png" alt="pinterest" class="icon-social"></a>
+            <a href=""><img src="/assets/img/social-media/tiktok.png" alt="tiktok" class="icon-social"></a>
+        </div>
+    </div>
+    </footer>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("header").style.top = "0";
+            }
+            else {
+                document.getElementById("header").style.top = "-50px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+        
+    </script>
+    <script>
+var button = document.getElementById('slide');
+button.onclick = function () {
+    var container = document.getElementById('container');
+    sideScroll(container,'right',25,325,85);
+};
+
+var back = document.getElementById('slideBack');
+back.onclick = function () {
+    var container = document.getElementById('container');
+    sideScroll(container,'left',25,325,85);
+};
+
+function sideScroll(element,direction,speed,distance,step){
+    var scrollAmount = 0; 
+    var slideTimer = setInterval(function(){
+        if (direction == 'left'){
+            element.scrollLeft -= step;
+        } else {
+            element.scrollLeft += step;
+        }
+        scrollAmount += step;
+        if(scrollAmount >= distance){
+            window.clearInterval(slideTimer);
+        
+        }
+    },speed);
+}
+    </script>
+</body>
+</html>

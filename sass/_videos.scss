@@ -7,12 +7,23 @@ $green2 : #808000;
 .txt-portada{
   color: $withe;
   text-align: justify;
-  margin-left: 3vw;
-  padding-right: 6vw;
   display: flex;
   flex-direction: column;
   width: 90vw;
   height: auto;
+  margin-left: 2vw;
+  h2{
+    margin: 0;
+    margin-bottom: 1vw;
+  }
+  p{
+    margin: 0; 
+    margin-bottom: 2vw; 
+  }
+  ul{
+    border-left: 1px solid $green1;
+    margin: 0;
+  }
 }
 
 .txt-video{
@@ -123,9 +134,9 @@ border-top: none;
   border-bottom: 1px solid $withe;
 }
 .container-details{
+  margin-top: 2vw;
   display: flex;
   justify-content:space-around;
-  //background-color: $green1;
 }
 .detail{
   border-radius: 5px;

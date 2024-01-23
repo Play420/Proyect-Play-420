@@ -94,12 +94,23 @@ header .botones .button-header:hover {
 .txt-portada {
   color: #E8F7D7;
   text-align: justify;
-  margin-left: 3vw;
-  padding-right: 6vw;
   display: flex;
   flex-direction: column;
   width: 90vw;
   height: auto;
+  margin-left: 2vw;
+}
+.txt-portada h2 {
+  margin: 0;
+  margin-bottom: 1vw;
+}
+.txt-portada p {
+  margin: 0;
+  margin-bottom: 2vw;
+}
+.txt-portada ul {
+  border-left: 1px solid #19AC54;
+  margin: 0;
 }
 
 .txt-video {
@@ -212,6 +223,7 @@ header .botones .button-header:hover {
 }
 
 .container-details {
+  margin-top: 2vw;
   display: flex;
   justify-content: space-around;
 }
@@ -702,13 +714,14 @@ div .ico-play {
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 2vw;
   width: 90vw;
   overflow-x: auto;
   display: flex;
 }
 .container img {
   display: flex;
-  width: 90vw;
+  width: 50vw;
   flex-wrap: nowrap;
   flex-direction: row;
 }
@@ -718,15 +731,66 @@ div .ico-play {
   justify-content: center;
   padding: 1vw;
 }
+.slides button {
+  margin-top: 0;
+}
 
 #slideBack {
+  border: 0;
+  background-color: #19AC54;
   padding: 1vw;
   margin: 1vw;
+  margin-top: 0;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #07000c;
+  padding-bottom: 0.5vw;
+  padding-top: 0.5vw;
 }
 
 #slide {
+  border: 0;
+  background-color: #19AC54;
   padding: 1vw;
+  padding-bottom: 0.5vw;
+  padding-top: 0.5vw;
   margin: 1vw;
+  margin-top: 0;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #07000c;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 0px;
+}
+
+.container::-webkit-scrollbar {
+  width: 15px;
+  height: 2vh;
+}
+
+.container::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+#slideBack:hover {
+  color: #19AC54;
+  font-weight: bold;
+  background: rgba(7, 0, 12, 0.5);
+  transition-duration: 0.25;
+  transform: scale(1.5);
+}
+
+#slide:hover {
+  color: #19AC54;
+  font-weight: bold;
+  background: rgba(7, 0, 12, 0.5);
+  transition-duration: 0.25;
+  transform: scale(1.5);
 }
 
 @media (max-width: 768px) {

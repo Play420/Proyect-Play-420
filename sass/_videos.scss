@@ -27,26 +27,41 @@ $green2 : #808000;
 }
 .portada-video{
   display: flex;
+  width: 90vw;
   padding: 2vw;
+  margin-left: auto;
+  margin-right: auto;
   flex-direction: row;
   align-content: center;
   align-items: center;
   justify-content: center;
 }
+.h2{
+  display:flex ;
+  justify-content:center;
+  width: 90vw;
+  color: $withe;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+}
 .container1{
+  
   display: flex;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
     color: $withe;
-  video{
+    width: 90vw;
+
+  img{
     margin: 1vw;
     padding-bottom: 1vw;
-    width: 20VW;
+    width: 15VW;
     height: auto;
     display: flex;
     align-items: center;
-    border-radius: 10px;
+    border-radius:  10px;
   }
   .EP{
     display: flex;
@@ -55,4 +70,122 @@ $green2 : #808000;
   }
   
   
+}
+.collapsible{
+  background-color: transparent;
+color: white;
+cursor: pointer;
+padding: 1rem;
+border-radius: .3rem .3rem 0 0;
+width: 100%;
+outline: none;
+display: flex;
+justify-content: space-between;
+align-items: center;
+transition: all ease 300ms;
+}
+.content{
+padding: 0 18px;
+max-height: 0;
+overflow: hidden;
+transition: max-height 300ms ease;
+background-color: transparent;
+border-radius: 0 0 .3rem .3rem;
+border-top: none;
+}
+//scroll de descarga para los episodios
+.scroll-episodes{
+  background-color: $green1;
+  border-radius: 10px;
+  width: 90vw;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bg-img{
+  width: 25vw;
+}
+.episode{
+  background-color: $black;
+  color: $withe;
+  width: 25vw;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-details{
+
+  background-color: $green1;
+}
+.detail{
+  width: 5vw;
+  height: auto;
+  background-color: $black;
+  color: $withe;
+}
+.buton-download{
+  background-color: $green1;
+  color: $withe;
+  text-decoration: none;
+
+}
+
+//RESPONSIVE
+@media (max-width: 768px){
+
+  .scroll-episodes{
+    background-color: transparent;
+    border: 1px solid $green1;
+    
+  }
+  .bg-img{
+    border-radius: 5px;
+  }
+  .episode{
+    display: flex;
+    width: 80vw;
+    padding: 2vw;
+    border-radius: 5px;
+    border: 1px solid $green1;
+    margin-bottom: 2.5vw;
+  }
+  // .img.details{
+
+  // }
+  .container-details{
+    background-color: transparent;
+    width: auto;
+    display: flex;
+
+  }
+  .detail{
+    color: $withe;
+    background-color: transparent;
+    width: auto;
+    border-radius: 5px;
+    margin: auto;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    padding-left:.3vw ;
+    padding-right: .4vw;
+  }
+  .resume{
+    font-size: 10px;
+    text-align: center;
+  }
+  .buton-download{
+    color: $black;
+    font-weight: bold;
+    padding: 1vw;
+    border-radius: 5px;
+  }
+  .buton-download:hover{
+    color:$withe;      
+    font-weight: bold;
+    background: rgb(7, 0, 12, .5);
+  border: $green1 .1px solid;
+  transition-duration: 0.25;
+  transform: scale(1.03);
+  }
 }

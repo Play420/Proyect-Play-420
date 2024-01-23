@@ -4,11 +4,7 @@ $green_dark : #022B20;
 $green1 : #19AC54;
 $green2 : #808000;
 
-section{
-  display: block;
-  margin: 0;
-  padding-bottom: 0;
-}
+
 
 .container-new-section{
   display: flex;
@@ -18,7 +14,9 @@ section{
     padding-top: 2vh;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 2vw;
     justify-content: space-around;
+
 }
 
 .new-section{
@@ -33,12 +31,12 @@ section{
     img{
       width: 19vw;
       height: auto;
-      border-radius: 10px;
+      border-radius: 1vw;
     }
 }
 .new-section img:hover{
   border: 0px $green1 dashed;
-  
+  box-shadow: #19AC54 0vw 0vw 1vw 0px;
   z-index: 10;
   transition-duration: 0.25;
   transform: scale(1.03);
@@ -76,7 +74,7 @@ section{
       img{
         width: 29vw;
         height: auto;
-        border-radius: 10px;
+        border-radius: 1.5vw;
       }
       }
 

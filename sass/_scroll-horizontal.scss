@@ -8,9 +8,8 @@ $green2 : #808000;
 #scroll-horizontal{
   margin-top: 4vw;
   width: 90vw;
-  
-height: auto;
-margin-left: auto;
+  height: auto;
+  margin-left: auto;
 margin-right: auto;
   
 }
@@ -23,7 +22,7 @@ height: auto;
 margin-left: auto;
 margin-right: auto;
 margin-bottom: 6vh;
-border-radius: 15px;
+border-radius: 1vw;
 }
 
 
@@ -52,7 +51,7 @@ border-radius: 15px;
   width: 19vw;
   height: auto;
   margin: 1vh;
-  border-radius: 15px;
+  border-radius: 1vw;
   }
 }
 
@@ -73,6 +72,38 @@ color: floralwhite;
   color: $withe;
   
   
+}
+
+
+//Scroll Horizontal Con Botones - - - - - - - - - - - -
+.container{
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90vw;
+  overflow-x: auto;
+  display: flex;
+
+  img{
+    display: flex;
+    width: 90vw;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+}
+
+.slides{
+  display:flex ; 
+  justify-content:center;
+  padding:1vw;
+}
+#slideBack{
+  padding:1vw;
+  margin:1vw;
+}
+#slide{
+  padding:1vw;
+  margin:1vw;
 }
 
 @media(max-width:768px){

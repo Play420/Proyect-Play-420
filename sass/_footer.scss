@@ -5,17 +5,20 @@ $green1 : #19AC54;
 $green2 : #808000;
 
 footer{
-  background-color: rgb(2, 43, 32, .5);
-  backdrop-filter: blur(5px);
-
-  div{
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
     justify-content: center;
     flex-direction: row;
-  }
+  width: 90vw;
+  height: auto;
+  background-color: $green1;
+  //border-bottom: 5px $black solid;
+  //backdrop-filter: blur(5px);
+  margin:auto;
+  margin-bottom:1vw;
+  border-radius: 1vw;
 
-  .conten-footer{
+  .content-footer{
     display: flex;
     justify-content: center;    
   }
@@ -37,7 +40,7 @@ footer{
 }
 
 @media (max-width: 800px) {
-  footer{
+  .content-footer{
     display: flex;
     justify-content: center;    
     .icon-social{

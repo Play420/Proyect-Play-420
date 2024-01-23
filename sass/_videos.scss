@@ -132,9 +132,9 @@ border-top: none;
   text-align: center;
   width: 5vw;
   height: auto;
-  border: 1px solid $green1;
+  border: 1px solid $withe;
   color: $withe;
-  font-weight: bold;
+  font-weight:bolder;
 }
 .resume{
   text-align: center;
@@ -176,8 +176,38 @@ transform: scale(1.03);
 //RESPONSIVE
 @media (max-width: 768px){
 
+  .portada-video{
+    flex-direction: column;
+    
+  }
+  
   .txt-descripcion{
     font-size: 14px;
+    margin: 0;
+  }
+  .img-portada{
+    width: 90vw;
+    height: auto;
+    border-radius: 10px;
+  }
+  .txt-portada{
+    margin-left: auto;
+    margin-right: auto;
+    h2{
+      margin-bottom: 2vw;
+    }
+    p{
+      text-align: justify;
+      margin-bottom: 5vw;
+    }
+    ul{
+      border-radius: 1px;
+      border-left: 1px solid $green1;
+      font-size: 12px;
+      margin: 0;
+      padding-left: 10vw;
+      
+    }
   }
   .h2{
     font-size: 18px;

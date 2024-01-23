@@ -280,6 +280,7 @@ header .botones .button-header:hover {
     border-radius: 10px;
   }
   .txt-portada {
+    padding: 0;
     margin-left: auto;
     margin-right: auto;
   }
@@ -295,7 +296,6 @@ header .botones .button-header:hover {
     border-left: 1px solid #19AC54;
     font-size: 12px;
     margin: 0;
-    padding-left: 10vw;
   }
   .h2 {
     font-size: 18px;
@@ -355,7 +355,7 @@ header .botones .button-header:hover {
     padding-right: 0.4vw;
   }
   .resume {
-    width: 48vw;
+    width: 45vw;
     height: auto;
     font-size: 12px;
     text-align: center;

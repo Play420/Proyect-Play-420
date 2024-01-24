@@ -222,6 +222,32 @@ header .botones .button-header:hover {
   height: auto;
   margin: 1vw;
   border-bottom: 1px solid #E8F7D7;
+  transition: all;
+}
+
+.episode:hover {
+  box-shadow: #19AC54 0px 0px 5px 0px;
+  transform: scale(1.03);
+}
+
+.movie {
+  background-color: #07000c;
+  border-radius: 10px;
+  color: #E8F7D7;
+  width: 50vw;
+  height: auto;
+  margin: 1vw;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid #E8F7D7;
+}
+.movie img {
+  width: 50vw;
+}
+
+.movie:hover {
+  box-shadow: #19AC54 0px 0px 5px 0px;
+  transform: scale(1.03);
 }
 
 .container-details {
@@ -341,6 +367,25 @@ header .botones .button-header:hover {
   .bg-img {
     width: 30vw;
     border-radius: 5px;
+  }
+  .movie {
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;
+    border-radius: 5px;
+    border: 1px solid #19AC54;
+    margin-top: 2vw;
+    color: #E8F7D7;
+    height: auto;
+  }
+  .movie img {
+    width: 50vw;
+  }
+  .movie:hover {
+    box-shadow: #19AC54 0px 0px 5px 0px;
   }
   .episode {
     display: flex;

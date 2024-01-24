@@ -385,7 +385,7 @@ header .botones .button-header:hover {
     width: 50vw;
   }
   .movie:hover {
-    box-shadow: #19AC54 0px 0px 5px 0px;
+    box-shadow: #19AC54 0px 0px 10px 0px;
   }
   .episode {
     display: flex;
@@ -701,11 +701,12 @@ div .ico-play {
   }
 }
 #scroll-horizontal {
-  margin-top: 4vw;
+  margin-top: 5vw;
   width: 90vw;
   height: auto;
   margin-left: auto;
   margin-right: auto;
+  border-top: solid #19AC54 1px;
 }
 
 .contenedor-detalles {
@@ -726,7 +727,7 @@ div .ico-play {
 
 .contenedor-detalles::-webkit-scrollbar {
   width: 15px;
-  height: 1vh;
+  height: 1.5vh;
 }
 
 .contenedor-detalles::-webkit-scrollbar-track {

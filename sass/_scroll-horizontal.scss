@@ -6,11 +6,12 @@ $green1 : #19AC54;
 $green2 : #808000;
 
 #scroll-horizontal{
-  margin-top: 4vw;
+  margin-top: 5vw;
   width: 90vw;
   height: auto;
   margin-left: auto;
 margin-right: auto;
+border-top: solid $green1 1px;
   
 }
 
@@ -33,7 +34,7 @@ border-radius: 1vw;
 }
 .contenedor-detalles::-webkit-scrollbar{
   width: 15px;
-  height: 1vh;
+  height: 1.5vh;
 }
 .contenedor-detalles::-webkit-scrollbar-track{
   background-color: $black;

@@ -385,7 +385,7 @@ header .botones .button-header:hover {
     width: 50vw;
   }
   .movie:hover {
-    box-shadow: #19AC54 0px 0px 10px 0px;
+    box-shadow: #19AC54 0px 0px 5px 0px;
   }
   .episode {
     display: flex;
@@ -493,9 +493,9 @@ footer {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  width: 90vw;
+  width: 95vw;
   height: auto;
-  background-color: #19AC54;
+  background-image: linear-gradient(to top, rgba(25, 172, 84, 0.2), rgb(7, 0, 12), transparent);
   margin: auto;
   margin-bottom: 1vw;
   border-radius: 1vw;
@@ -514,6 +514,7 @@ footer .icon-social {
   transform: scale(1);
 }
 footer .icon-social:hover {
+  box-shadow: #19AC54 0px 1px 1px -1px;
   transition-duration: 0.25;
   transform: scale(1.08);
 }
@@ -529,175 +530,156 @@ footer .icon-social:hover {
   }
 }
 .banner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-items: center;
-  justify-content: flex-end;
   background-image: url(/assets/img/miniaturas/soutpark-port.png);
   background-size: 100% auto;
   width: 90vw;
-  height: 30vw;
+  height: auto;
   padding: 0;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 15px;
+  border-radius: 11px;
 }
-.banner .text-banner {
-  padding: 20px;
-  margin-bottom: 2vw;
+
+.banner1 {
+  background-image: url(/peliculas/leo/assets/tinywow_MINIATURALEO_45934896.webp);
+  background-size: 100% auto;
+  width: 90vw;
+  height: auto;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 11px;
+}
+
+.banner-2 {
+  background-image: url(/peliculas/sawx/assets/img/sawxBan.webp);
+  background-size: 100% auto;
+  width: 90vw;
+  height: auto;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 11px;
+}
+
+.banner-3 {
+  background-image: url(/assets/img/miniaturas/marvels.png);
+  background-size: 100% auto;
+  width: 90vw;
+  height: auto;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 11px;
+}
+
+.banner-4 {
+  display: flex;
+  background-image: url(/assets/img/miniaturas/tinywow_fnaf_43588794.webp);
+  background-size: 100% auto;
+  width: 90vw;
+  height: auto;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 11px;
+}
+
+.text-banner {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 5vw;
+  padding-bottom: 2vw;
   color: #E8F7D7;
-  background: rgba(7, 0, 12, 0.4);
-  backdrop-filter: blur(5px);
-  border-radius: 0px;
+  background-image: linear-gradient(to top, transparent, rgb(7, 0, 12));
+  backdrop-filter: blur(2px);
+  border-radius: 10px 10px 0px 0px;
+  text-align: center;
 }
-.banner .text-banner h2 {
+.text-banner h2 {
   padding: 0;
   margin: 0;
 }
-.banner .text-banner p {
-  font-size: 13px;
+.text-banner p {
+  font-size: 16px;
 }
 
-.ico-play {
-  width: 100vw;
+.button-banner {
+  display: block;
   height: auto;
-  margin-left: 1vh;
-  margin-right: 1vh;
-}
-
-div .ico-play {
-  width: 10vh;
-  height: auto;
-  margin-left: 1vh;
-  margin-right: 1vh;
-}
-div .img-banner {
-  max-width: 100%;
-  height: auto;
-}
-div .button-banner {
-  display: flex;
-  width: 18vw;
-  height: auto;
+  margin: 0;
+  padding: 1vw;
+  padding-top: 0.4vw;
+  padding-bottom: 0.4vw;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
   background: #19AC54;
   backdrop-filter: blur(5px);
-  border: 0px solid #07000c;
-  font-weight: 900;
+  box-shadow: #07000c 0px 0px 2px 0px;
+  font-weight: 800;
   color: #07000c;
-  align-items: center;
-  justify-items: center;
-  justify-content: center;
-  align-content: center;
+  text-decoration: none;
   border-radius: 10px;
   transition-property: all;
   transform: scale(1);
 }
-div .button-banner a:link {
-  text-decoration: none;
-  color: #E8F7D7;
+.button-banner .ico-play {
+  width: 2vw;
+  margin-right: 1vw;
+  height: auto;
 }
-div .button-banner:hover {
-  background: rgba(7, 0, 12, 0.5);
-  border: #19AC54 0.1px solid;
+.button-banner p {
+  background-size: auto;
+  margin: 0;
+  font-size: 16px;
+}
+
+.button-banner:hover {
+  background: rgba(7, 0, 12, 0.7);
+  box-shadow: #19AC54 0px 0px 2px 0px;
+  color: #E8F7D7;
   transition-duration: 0.25;
   transform: scale(1.03);
 }
-@media (max-width: 1024px) {
-  div .button-banner {
-    top: 65vw;
-    width: 33vw;
-    height: 5vh;
-    font-size: 1vh;
-    border-radius: 3vh;
-    font-size: x-large;
-  }
-}
-@media (max-width: 800px) {
-  div .banner {
-    background-size: 100% 100%;
-    width: 90vw;
-    height: auto;
-  }
-}
-div .button-banner {
-  top: 60vw;
-  width: 33vw;
-  height: 5vh;
-  border-radius: 3vh;
-  font-size: small;
-}
-div .ico-play {
-  width: 3vh;
-  height: auto;
+.button-banner:hover p {
+  font-size: 16px;
 }
 
 @media (max-width: 768px) {
-  .banner {
-    background-size: 100% auto;
-    width: 90vw;
-    height: auto;
-  }
-  .button-banner {
-    top: 63vw;
-    width: 30vw;
-    height: auto;
-    border-radius: 3vh;
-    font-size: small;
-    font-weight: 300;
-  }
-  .button-banner p {
-    font-weight: 500;
-  }
-  .ico-play {
-    width: 3vh;
-    height: auto;
-  }
   .text-banner {
     border-radius: 10px;
+    padding-bottom: 2.2vw;
   }
   .text-banner h2 {
     padding: 0;
     margin: 0;
   }
   .text-banner p {
-    font-size: 11px;
+    font-size: 10px;
   }
-}
-@media (max-width: 480px) {
   .button-banner {
-    top: 64vw;
-    right: 33vw;
-    width: 35vw;
     height: auto;
-    font-size: small;
-    border-radius: 3vh;
+    border-radius: 2vw;
+    font-size: 10px;
+    padding: 2vw;
+    padding-top: 0.8vw;
+    padding-bottom: 0.8vw;
   }
-  .ico-play {
-    width: 3vh;
-    height: auto;
-    margin-right: 0.5vh;
-    margin-left: 0;
-  }
-  .banner {
-    background-size: 100% auto;
-    width: 90vw;
+  .button-banner .ico-play {
+    width: 5vw;
     height: auto;
   }
-}
-@media (max-width: 380px) {
-  .button-banner {
-    top: 31vh;
-    right: 36vw;
-    width: 33vw;
-    height: auto;
-    font-size: xx-small;
+  .button-banner p {
+    font-size: 10px;
   }
-  .ico-play {
-    width: 2vh;
-    height: auto;
-    margin-right: 0.5vh;
-    margin-left: 0;
+  .button-banner:hover {
+    box-shadow: #19AC54 0px 0px 2px 0px;
+    transform: scale(1.02);
+  }
+  .button-banner:hover p {
+    font-size: 10px;
   }
 }
 #scroll-horizontal {
@@ -706,7 +688,6 @@ div .ico-play {
   height: auto;
   margin-left: auto;
   margin-right: auto;
-  border-top: solid #19AC54 1px;
 }
 
 .contenedor-detalles {
@@ -778,7 +759,6 @@ div .ico-play {
 .slides {
   display: flex;
   justify-content: center;
-  padding: 1vw;
 }
 .slides button {
   margin-top: 0;
@@ -786,7 +766,7 @@ div .ico-play {
 
 #slideBack {
   border: 0;
-  background-color: #19AC54;
+  background-color: transparent;
   padding: 1vw;
   margin: 1vw;
   margin-top: 0;
@@ -800,7 +780,7 @@ div .ico-play {
 
 #slide {
   border: 0;
-  background-color: #19AC54;
+  background-color: transparent;
   padding: 1vw;
   padding-bottom: 0.5vw;
   padding-top: 0.5vw;
@@ -831,15 +811,14 @@ div .ico-play {
   font-weight: bold;
   background: rgba(7, 0, 12, 0.5);
   transition-duration: 0.25;
-  transform: scale(1.5);
+  transform: scale(1.1);
 }
 
 #slide:hover {
   color: #19AC54;
   font-weight: bold;
-  background: rgba(7, 0, 12, 0.5);
   transition-duration: 0.25;
-  transform: scale(1.5);
+  transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
@@ -851,175 +830,156 @@ div .ico-play {
   }
 }
 .banner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-items: center;
-  justify-content: flex-end;
   background-image: url(/assets/img/miniaturas/soutpark-port.png);
   background-size: 100% auto;
   width: 90vw;
-  height: 30vw;
+  height: auto;
   padding: 0;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 15px;
+  border-radius: 11px;
 }
-.banner .text-banner {
-  padding: 20px;
-  margin-bottom: 2vw;
+
+.banner1 {
+  background-image: url(/peliculas/leo/assets/tinywow_MINIATURALEO_45934896.webp);
+  background-size: 100% auto;
+  width: 90vw;
+  height: auto;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 11px;
+}
+
+.banner-2 {
+  background-image: url(/peliculas/sawx/assets/img/sawxBan.webp);
+  background-size: 100% auto;
+  width: 90vw;
+  height: auto;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 11px;
+}
+
+.banner-3 {
+  background-image: url(/assets/img/miniaturas/marvels.png);
+  background-size: 100% auto;
+  width: 90vw;
+  height: auto;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 11px;
+}
+
+.banner-4 {
+  display: flex;
+  background-image: url(/assets/img/miniaturas/tinywow_fnaf_43588794.webp);
+  background-size: 100% auto;
+  width: 90vw;
+  height: auto;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 11px;
+}
+
+.text-banner {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 5vw;
+  padding-bottom: 2vw;
   color: #E8F7D7;
-  background: rgba(7, 0, 12, 0.4);
-  backdrop-filter: blur(5px);
-  border-radius: 0px;
+  background-image: linear-gradient(to top, transparent, rgb(7, 0, 12));
+  backdrop-filter: blur(2px);
+  border-radius: 10px 10px 0px 0px;
+  text-align: center;
 }
-.banner .text-banner h2 {
+.text-banner h2 {
   padding: 0;
   margin: 0;
 }
-.banner .text-banner p {
-  font-size: 13px;
+.text-banner p {
+  font-size: 16px;
 }
 
-.ico-play {
-  width: 100vw;
+.button-banner {
+  display: block;
   height: auto;
-  margin-left: 1vh;
-  margin-right: 1vh;
-}
-
-div .ico-play {
-  width: 10vh;
-  height: auto;
-  margin-left: 1vh;
-  margin-right: 1vh;
-}
-div .img-banner {
-  max-width: 100%;
-  height: auto;
-}
-div .button-banner {
-  display: flex;
-  width: 18vw;
-  height: auto;
+  margin: 0;
+  padding: 1vw;
+  padding-top: 0.4vw;
+  padding-bottom: 0.4vw;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
   background: #19AC54;
   backdrop-filter: blur(5px);
-  border: 0px solid #07000c;
-  font-weight: 900;
+  box-shadow: #07000c 0px 0px 2px 0px;
+  font-weight: 800;
   color: #07000c;
-  align-items: center;
-  justify-items: center;
-  justify-content: center;
-  align-content: center;
+  text-decoration: none;
   border-radius: 10px;
   transition-property: all;
   transform: scale(1);
 }
-div .button-banner a:link {
-  text-decoration: none;
-  color: #E8F7D7;
+.button-banner .ico-play {
+  width: 2vw;
+  margin-right: 1vw;
+  height: auto;
 }
-div .button-banner:hover {
-  background: rgba(7, 0, 12, 0.5);
-  border: #19AC54 0.1px solid;
+.button-banner p {
+  background-size: auto;
+  margin: 0;
+  font-size: 16px;
+}
+
+.button-banner:hover {
+  background: rgba(7, 0, 12, 0.7);
+  box-shadow: #19AC54 0px 0px 2px 0px;
+  color: #E8F7D7;
   transition-duration: 0.25;
   transform: scale(1.03);
 }
-@media (max-width: 1024px) {
-  div .button-banner {
-    top: 65vw;
-    width: 33vw;
-    height: 5vh;
-    font-size: 1vh;
-    border-radius: 3vh;
-    font-size: x-large;
-  }
-}
-@media (max-width: 800px) {
-  div .banner {
-    background-size: 100% 100%;
-    width: 90vw;
-    height: auto;
-  }
-}
-div .button-banner {
-  top: 60vw;
-  width: 33vw;
-  height: 5vh;
-  border-radius: 3vh;
-  font-size: small;
-}
-div .ico-play {
-  width: 3vh;
-  height: auto;
+.button-banner:hover p {
+  font-size: 16px;
 }
 
 @media (max-width: 768px) {
-  .banner {
-    background-size: 100% auto;
-    width: 90vw;
-    height: auto;
-  }
-  .button-banner {
-    top: 63vw;
-    width: 30vw;
-    height: auto;
-    border-radius: 3vh;
-    font-size: small;
-    font-weight: 300;
-  }
-  .button-banner p {
-    font-weight: 500;
-  }
-  .ico-play {
-    width: 3vh;
-    height: auto;
-  }
   .text-banner {
     border-radius: 10px;
+    padding-bottom: 2.2vw;
   }
   .text-banner h2 {
     padding: 0;
     margin: 0;
   }
   .text-banner p {
-    font-size: 11px;
+    font-size: 10px;
   }
-}
-@media (max-width: 480px) {
   .button-banner {
-    top: 64vw;
-    right: 33vw;
-    width: 35vw;
     height: auto;
-    font-size: small;
-    border-radius: 3vh;
+    border-radius: 2vw;
+    font-size: 10px;
+    padding: 2vw;
+    padding-top: 0.8vw;
+    padding-bottom: 0.8vw;
   }
-  .ico-play {
-    width: 3vh;
-    height: auto;
-    margin-right: 0.5vh;
-    margin-left: 0;
-  }
-  .banner {
-    background-size: 100% auto;
-    width: 90vw;
+  .button-banner .ico-play {
+    width: 5vw;
     height: auto;
   }
-}
-@media (max-width: 380px) {
-  .button-banner {
-    top: 31vh;
-    right: 36vw;
-    width: 33vw;
-    height: auto;
-    font-size: xx-small;
+  .button-banner p {
+    font-size: 10px;
   }
-  .ico-play {
-    width: 2vh;
-    height: auto;
-    margin-right: 0.5vh;
-    margin-left: 0;
+  .button-banner:hover {
+    box-shadow: #19AC54 0px 0px 2px 0px;
+    transform: scale(1.02);
+  }
+  .button-banner:hover p {
+    font-size: 10px;
   }
 }
 body {

@@ -9,9 +9,10 @@ footer{
   align-items: center;
     justify-content: center;
     flex-direction: row;
-  width: 90vw;
+  width: 95vw;
   height: auto;
-  background-color: $green1;
+  
+  background-image: linear-gradient(to top, rgb(25, 172, 84,.2),rgb(7, 0, 12),transparent);
   //border-bottom: 5px $black solid;
   //backdrop-filter: blur(5px);
   margin:auto;
@@ -34,6 +35,7 @@ footer{
   }
 
   .icon-social:hover{
+    box-shadow: #19AC54 0px 1px 1px -1px;
     transition-duration: 0.25;
     transform: scale(1.08);
   }

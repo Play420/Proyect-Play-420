@@ -540,51 +540,6 @@ footer .icon-social:hover {
   border-radius: 11px;
 }
 
-.banner1 {
-  background-image: url(/peliculas/leo/assets/tinywow_MINIATURALEO_45934896.webp);
-  background-size: 100% auto;
-  width: 90vw;
-  height: auto;
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 11px;
-}
-
-.banner-2 {
-  background-image: url(/peliculas/sawx/assets/img/sawxBan.webp);
-  background-size: 100% auto;
-  width: 90vw;
-  height: auto;
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 11px;
-}
-
-.banner-3 {
-  background-image: url(/assets/img/miniaturas/marvels.png);
-  background-size: 100% auto;
-  width: 90vw;
-  height: auto;
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 11px;
-}
-
-.banner-4 {
-  display: flex;
-  background-image: url(/assets/img/miniaturas/tinywow_fnaf_43588794.webp);
-  background-size: 100% auto;
-  width: 90vw;
-  height: auto;
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 11px;
-}
-
 .text-banner {
   width: auto;
   display: flex;
@@ -782,6 +737,7 @@ footer .icon-social:hover {
   border: 0;
   background-color: transparent;
   padding: 1vw;
+  width: auto;
   padding-bottom: 0.5vw;
   padding-top: 0.5vw;
   margin: 1vw;
@@ -809,7 +765,6 @@ footer .icon-social:hover {
 #slideBack:hover {
   color: #19AC54;
   font-weight: bold;
-  background: rgba(7, 0, 12, 0.5);
   transition-duration: 0.25;
   transform: scale(1.1);
 }
@@ -831,51 +786,6 @@ footer .icon-social:hover {
 }
 .banner {
   background-image: url(/assets/img/miniaturas/soutpark-port.png);
-  background-size: 100% auto;
-  width: 90vw;
-  height: auto;
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 11px;
-}
-
-.banner1 {
-  background-image: url(/peliculas/leo/assets/tinywow_MINIATURALEO_45934896.webp);
-  background-size: 100% auto;
-  width: 90vw;
-  height: auto;
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 11px;
-}
-
-.banner-2 {
-  background-image: url(/peliculas/sawx/assets/img/sawxBan.webp);
-  background-size: 100% auto;
-  width: 90vw;
-  height: auto;
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 11px;
-}
-
-.banner-3 {
-  background-image: url(/assets/img/miniaturas/marvels.png);
-  background-size: 100% auto;
-  width: 90vw;
-  height: auto;
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 11px;
-}
-
-.banner-4 {
-  display: flex;
-  background-image: url(/assets/img/miniaturas/tinywow_fnaf_43588794.webp);
   background-size: 100% auto;
   width: 90vw;
   height: auto;

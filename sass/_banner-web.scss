@@ -15,47 +15,7 @@ $green2 : #808000;
   margin-right: auto;
   border-radius: 11px;
 }
-.banner1{
-  background-image: url(/peliculas/leo/assets/tinywow_MINIATURALEO_45934896.webp);
-  background-size: 100% auto;
-  width: 90vw;
-  height:auto;
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 11px;
-}
-.banner-2{
-  background-image: url(/peliculas/sawx/assets/img/sawxBan.webp);
-  background-size: 100% auto;
-  width: 90vw;
-  height:auto;
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 11px;
-}
-.banner-3{
-  background-image: url(/assets/img/miniaturas/marvels.png);
-  background-size: 100% auto;
-  width: 90vw;
-  height:auto;
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 11px;
-}
-.banner-4{
-  display: flex;
-  background-image: url(/assets/img/miniaturas/tinywow_fnaf_43588794.webp);
-  background-size: 100% auto;
-  width: 90vw;
-  height:auto;
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 11px;
-}
+
 
   .text-banner{
     width: auto;
@@ -114,6 +74,7 @@ $green2 : #808000;
     color: $withe;
     transition-duration: 0.25;
     transform: scale(1.03);
+    
     p{
       font-size: 16px;
     }

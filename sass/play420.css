@@ -93,12 +93,13 @@ header .botones .button-header:hover {
 }
 .txt-portada {
   color: #E8F7D7;
-  text-align: justify;
+  text-align: left;
   display: flex;
   flex-direction: column;
-  width: 90vw;
+  max-width: 1024px;
   height: auto;
   margin-left: 2vw;
+  line-height: 1.5;
 }
 .txt-portada h2 {
   margin: 0;
@@ -112,7 +113,7 @@ header .botones .button-header:hover {
 .txt-portada ul {
   border-left: 1px solid #19AC54;
   margin: 0;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .txt-video {
@@ -264,6 +265,7 @@ header .botones .button-header:hover {
   border: 1px solid #E8F7D7;
   color: #E8F7D7;
   font-weight: bolder;
+  user-select: none;
 }
 
 .resume {
@@ -329,7 +331,7 @@ header .botones .button-header:hover {
     margin-bottom: 2vw;
   }
   .txt-portada p {
-    text-align: justify;
+    text-align: left;
     margin-bottom: 5vw;
   }
   .txt-portada ul {
@@ -896,7 +898,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #07000c;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 /*# sourceMappingURL=play420.css.map */

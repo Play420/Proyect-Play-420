@@ -6,13 +6,14 @@ $green2 : #808000;
 
 .txt-portada{
   color: $withe;
-  text-align: justify;
+  text-align: left;
   display: flex;
   flex-direction: column;
-  width: 90vw;
+  max-width: 1024px;
   height: auto;
   margin-left: 2vw;
-  h2{
+  line-height:1.5 ;
+    h2{
     margin: 0;
     margin-top: 0vw;
     margin-bottom: 1vw;
@@ -24,21 +25,22 @@ $green2 : #808000;
   ul{
     border-left: 1px solid $green1;
     margin: 0;
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
 .txt-video{
   display: flex;
   flex-direction: column;
-  
   margin: 2vw;
 }
+
 .img-portada{
   width: 30vw;
   height: auto;
   border-radius: 15px;
 }
+
 .portada-video{
   display: flex;
   width: 90vw;
@@ -50,7 +52,8 @@ $green2 : #808000;
   align-items: center;
   justify-content: center;
 }
-.h2{
+
+.h2 {
   display:flex ;
   justify-content: flex-start;
   width: 90vw;
@@ -60,15 +63,14 @@ $green2 : #808000;
   margin-bottom: .5vw;
   font-size: 20px;
 }
+
 .container1{
-  
   display: flex;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
     color: $withe;
     width: 90vw;
-
   img{
     margin: 1vw;
     padding-bottom: 1vw;
@@ -83,33 +85,32 @@ $green2 : #808000;
     flex-direction: column-reverse;
     align-items: center;
   }
-  
-  
 }
+
 .collapsible{
   background-color: transparent;
-color: white;
-cursor: pointer;
-padding: 1rem;
-border-radius: .3rem .3rem 0 0;
-width: 100%;
-outline: none;
-display: flex;
-justify-content: space-between;
-align-items: center;
-transition: all ease 300ms;
+  color: white;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: .3rem .3rem 0 0;
+  width: 100%;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all ease 300ms;
 }
 .content{
-padding: 0 18px;
-max-height: 0;
-overflow: hidden;
-transition: max-height 300ms ease;
-background-color: transparent;
-border-radius: 0 0 .3rem .3rem;
-border-top: none;
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 300ms ease;
+  background-color: transparent;
+  border-radius: 0 0 .3rem .3rem;
+  border-top: none;
 }
-//scroll de descarga para los episodios
 
+//scroll de descarga para los episodios
 .scroll-episodes{
   border-radius: 10px;
   width: 90vw;
@@ -121,11 +122,12 @@ border-top: none;
   overflow-y: auto;
   display: flex;
 }
-.bg-img{
-  
+
+.bg-img{  
   width: 25vw;
   border-radius: 10px 10px 0px 0px;
 }
+
 .episode{
   background-color: $black;
   border-radius: 10px;
@@ -141,6 +143,7 @@ border-top: none;
   box-shadow: #19AC54 -0px 0px 5px 0px ;
   transform: scale(1.03);
 }
+
 .movie{
   img{
     width: 50vw;
@@ -155,15 +158,18 @@ border-top: none;
   margin-right: auto;
   border-bottom: 1px solid $withe;
 }
+
 .movie:hover{
   box-shadow: #19AC54 -0px 0px 5px 0px ;
   transform: scale(1.03);
 }
+
 .container-details{
   margin-top: 2vw;
   display: flex;
   justify-content:space-around;
 }
+
 .detail{
   border-radius: 5px;
   text-align: center;
@@ -172,10 +178,13 @@ border-top: none;
   border: 1px solid $withe;
   color: $withe;
   font-weight:bolder;
+  user-select: none;
 }
+
 .resume{
   text-align: center;
 }
+
 .buton-download{
   background-color: $green1;
   color: $withe;
@@ -188,19 +197,23 @@ border-top: none;
     padding-right: 2vw;
     border-radius: 5px;
 }
+
 .scroll-episodes::-webkit-scrollbar-thumb{
   background-color: $green1;
   border-radius: 15px;
   
 }
+
 .scroll-episodes::-webkit-scrollbar{
   width: 15px;
   height: 2vh;
 }
+
 .scroll-episodes::-webkit-scrollbar-track{
   background-color: $black;
   
 }
+
 .buton-download:hover{
   color:$withe;      
   font-weight: bold;
@@ -231,13 +244,15 @@ transform: scale(1.03);
     padding: 0;
     margin-left: auto;
     margin-right: auto;
+    
     h2{
       margin-top: 2vw;
       margin-bottom: 2vw;
     }
     p{
-      text-align: justify;
+      text-align: left;
       margin-bottom: 5vw;
+      
     }
     ul{
       border-radius: 1px;
@@ -300,7 +315,7 @@ transform: scale(1.03);
   .movie:hover{
     box-shadow: #19AC54 -0px 0px 5px 0px ;
   }
-
+  
   .episode{
     display: flex;
     width: 80vw;
@@ -311,17 +326,14 @@ transform: scale(1.03);
     margin-left: auto;
     margin-right: auto;
   }
-  
 
-  // .img.details{
-
-  // }
   .container-details{
     background-color: transparent;
     width: auto;
     display: flex;
 
   }
+
   .detail{
     color: $withe;
     background-color: transparent;
@@ -334,8 +346,8 @@ transform: scale(1.03);
     padding-left:.3vw ;
     padding-right: .4vw;
   }
+
   .resume{
-    
     width: 45vw;
     height: auto;
     font-size: 12px;
@@ -343,12 +355,12 @@ transform: scale(1.03);
     margin-left: auto;
     margin-right: auto;
   }
+
   .buton-download{
     color: $black;
     font-weight: bold;
     padding-left: 2vw;
     padding-right: 2vw;
     border-radius: 5px;
-  }
-  
+  }  
 }

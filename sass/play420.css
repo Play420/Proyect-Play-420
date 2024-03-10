@@ -703,6 +703,7 @@ footer .icon-social:hover {
   margin-right: auto;
   margin-top: 2vw;
   width: 90vw;
+  height: auto;
   overflow-x: auto;
   display: flex;
 }
@@ -711,6 +712,12 @@ footer .icon-social:hover {
   width: 50vw;
   flex-wrap: nowrap;
   flex-direction: row;
+}
+
+.trailer {
+  width: 600px;
+  height: auto;
+  border-radius: 10px;
 }
 
 .slides {
@@ -784,6 +791,14 @@ footer .icon-social:hover {
     height: auto;
     margin: 1vh;
     border-radius: 10px;
+  }
+  .trailer {
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  .trailer {
+    display: none;
   }
 }
 .banner {

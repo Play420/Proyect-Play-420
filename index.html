@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/assets/img/1x/play.png" type="image/x-icon">
+    <link href="/assets/ico/D-W-buton.webp"rel="shortcut icon" type="image/x-icon">
+    <link href="/assets/ico/D-W-buton.webp" rel="apple-touch-icon">
     <link rel="stylesheet" href="/sass/play420.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,21 +14,12 @@
 </head>
 <body>
     <header class="header" id="header"><!--E N C A B E Z A D O--> 
-        <a type="button"  href="/index.html" >
-            <img  class="logo" src="/assets/img/ico.png" alt="logo">
-        </a>
         <div class="botones" >
-            <a href="/peliculas.html"class="button-header" src="/peliculas.html">
-                <font>
-                    Peliculas
-                </font>
-            </a>
-            <a href="/series.html" class="button-header">
-                <font>
-                    Series
-                </font>
-            </a>
+            <a href="/peliculas.html" class="button-header"><font>Peliculas</font></a>
+            <a type="button"  href="/index.html" ><img  class="logo" src="/assets/ico/D-G-buton.webp" alt="logo"></a>
+            <a href="/series.html" class="button-header"><font>Series</font></a>
         </div>
+        
     </header>
     <main>
         <article>
@@ -40,18 +32,12 @@
                                 Gracias por visitar nuestro sitio web de descargas.
                                 ¡Comienza a disfrutar de tus películas y series favoritas hoy mismo!
                             </p>
-                            <!-- <a class="button-banner" href="#" style="display: flex; align-items:center">
-                                <img class="ico-play" src="/assets/img/1x/play.png" alt="">
-                                <p>VER AHORA!</p>
-                            </a> -->
                     </div>
                 </div>
             </section>
             <!-- S C R O L L   H O R I Z O N T A L -->
             <section id="scroll-horizontal">
-                <h3 class="txt-scroll">
-                    • Lo más descargado:
-                </h3>
+                <h3 class="txt-scroll"><img src="/assets/ico/D-G-buton.webp" alt="" style="width: 16px; height:16px; margin:0px 5px; padding:0;"> Lo más descargado :</h3>
                 <div class="contenedor-detalles">
                     <div class="detalle">
                         <a href="/series/rick7/rick-t7.html">
@@ -78,16 +64,42 @@
                             <img src="/series/feartwd/assets/fearBan.png" alt="">
                         </a>
                     </div>
-                    <div class="detalle">
+                    <!-- <div class="detalle">
                         <a href="/series/encounters/encounters.html">
                             <img src="/series/encounters/assets/Mesa de trabajo 1facebook.jpg" alt="">
                         </a>
+                    </div> -->
+                </div>
+            </section>
+            <section class="cine"> <!-- Contenedor section cine-->
+                <div class="container-cine">
+                    <div class="mov" id="mov1">
+                        <h2>Leo</h2>
+                        <p>Ficcion | 180 min | 2.5 Gb | Mediafire</p>
+                        <a href="/peliculas/leo/leo.html" class="buton-download"><font>See more</font></a>
+                    </div>
+                    <div class="mov" id="mov2">
+                        <h2>Buddy Games</h2>
+                        <p>Ficcion | 180 min | 2.5 Gb | Mediafire</p>
+                        <a href="/peliculas/buddygames/buddygames.html" class="buton-download"><font>See more</font></a>
+                    </div>
+                </div>
+                <div class="container-cine">
+                    <div class="mov" id="mov3">
+                        <h2>Puerta Magica</h2>
+                        <p>Ficcion | 180 min | 2.5 Gb | Mediafire</p>
+                        <a href="/peliculas/puertamagica/puertamagica.html" class="buton-download"><font>See more</font></a>
+                    </div>
+                    <div class="mov" id="mov4">
+                        <h2>Five Nights at Freddy´s</h2>
+                        <p>Ficcion | 180 min | 2.5 Gb | Mediafire</p>
+                        <a href="/peliculas/fnaf/fnaf.html" class="buton-download"><font>See more</font></a>
                     </div>
                 </div>
             </section>
             <!-- C A R R E T E -->
             <section >
-                <h3 style="color:white; margin-left: 5vw; margin-bottom: -1vw;">Lo Más Reciente</h3>
+                <h3 class="txt"><img src="/assets/ico/D-G-buton.webp" alt="" style="width: 16px; height:16px; margin:0px 5px; padding:0;"> Lo Más Reciente:</h3>
                 <div class="container-new-section">
                     <a class="new-section" href="/series/vgly/vgly.html">
                         <img src="/series/vgly/assets/vglyPort.webp" alt="">
@@ -134,9 +146,9 @@
                     <a class="new-section" href="/peliculas/zuzume/zuzume.html">
                         <img src="/peliculas/zuzume/assets/zuzumeBan.png" alt="">
                     </a>
-                    <a class="new-section" href="/peliculas/themarvels/themarvels.html">
+                    <!-- <a class="new-section" href="/peliculas/themarvels/themarvels.html">
                         <img src="/peliculas/themarvels/assets/themarvelsBan.png" alt="">
-                    </a>
+                    </a> -->
                 </div>
             </section>
         <!-- <div id="container" class="container">
@@ -220,20 +232,7 @@
         </div>
     </footer>
     <!-- S C R I P S -->
-    <script>
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-            var currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos) {
-                document.getElementById("header").style.top = "0";
-            }
-            else {
-                document.getElementById("header").style.top = "-50px";
-            }
-            prevScrollpos = currentScrollPos;
-        }
-        
-    </script>
+    <script type="text/javascript" src="/js/sllide-header.js"></script>
     <script>
 var button = document.getElementById('slide');
 button.onclick = function () {

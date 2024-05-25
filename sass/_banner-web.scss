@@ -8,15 +8,13 @@ $green2 : #808000;
 .banner{
   background-image: url(/assets/img/Pattern-style-background-with-geometrics-borders--highlighting-the-theme-of-weed-and-play-icons-of-movies--with-a-crude-and-bizarre-accen\ \(8\).jpg);
   background-size: 100% auto;
-  width: 90vw;
+  width: 90%;
   height:auto;
   padding: 0;
   margin-left: auto;
   margin-right: auto;
   border-radius: 11px;
 }
-
-
   .text-banner{
     width: auto;
     display: flex;
@@ -26,7 +24,8 @@ $green2 : #808000;
     color: $withe;
     background-image: linear-gradient(to top, transparent, rgb(7, 0, 12, 1));
     backdrop-filter: blur(2px);
-    border-radius: 10px 10px 0px 0px;
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 8px;
     text-align: center;
     h2{
       padding: 0;
@@ -63,9 +62,7 @@ $green2 : #808000;
     p{
       background-size: auto;
       margin: 0;
-
       font-size: 16px;
-      
     }
   }
   .button-banner:hover{
@@ -74,15 +71,141 @@ $green2 : #808000;
     color: $withe;
     transition-duration: 0.25;
     transform: scale(1.03);
-    
     p{
       font-size: 16px;
     }
     
   }
-  
 
-  @media (max-width: 768px) {
+  .slider-container {// ! - - - -- - - - - - - - - - - S L I D E R   B A N N E R - - - - - - - - - - - - --*/
+    width: 90%;
+    height: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 0px;
+    position: relative;
+    overflow: hidden;
+    overflow-x: scroll;
+    z-index: 0; 
+    scroll-snap-type: both mandatory; 
+    scroll-behavior: smooth;
+  }
+  .slider-container::-webkit-scrollbar {
+    display: none;
+  }
+  .slider {
+    display: flex;
+    transition: transform 0.35s ease;
+    
+  }
+  .slide {
+    flex: 0 0 100%;
+    padding: 0;
+    scroll-snap-align:start;
+    margin: 0;
+    
+  }
+  .slider-nav {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+    width: 90%;
+    display: none;
+    justify-content: space-between;
+    font-size: 14px;
+  }
+  .slider-nav button{
+    background-color: $green1;
+    text-decoration: none;
+    color: #fff;
+    margin: 2px;
+    font-weight: bold;
+    padding-left: 1.2vw;
+    padding-right: 1.2vw;
+    border-radius: 5px;
+  }
+  .slider-nav button:hover{
+    -webkit-transition: color 200ms ease;
+    transition: color 200ms ease;
+    box-shadow: $green1  0px 0px 1px 1px;
+    background-color: transparent;
+    color: hsla(0, 0%, 100%, 0.55);
+    text-decoration: none;
+    transform: scale(1.02);
+  }
+  .slider-dots {
+    text-align: center;
+    margin-top: 0px;
+  }
+  .dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    box-shadow: $withe  0px 0px 1px 1px;
+    margin: 0 5px;
+    cursor: pointer;
+    margin-top: 0;
+  }
+  .dot:hover{
+    box-shadow: $green1  0px 0px 1px 1px;
+  }
+  .dot.active {
+    background-color: $green1;
+    box-shadow: $green1  0px 0px 1px 1px;
+  }
+  
+  .product{ // TODO - - - - - - - - - - - - - Contenido de cada slide - - - - - - - - - - - - -*/
+    background-image: url(/assets/img/Pattern-style-background-with-geometrics-borders--highlighting-the-theme-of-weed-and-play-icons-of-movies--with-a-crude-and-bizarre-accen\ \(8\).jpg);
+    background-size: 100% auto;
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .desc-product{
+    color: $withe;
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background-image: linear-gradient(to top, rgb(7, 0, 12, 1),transparent );
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    
+    h2{
+      margin: 0;
+      padding: 0;
+    }
+    p{
+      margin: 10px 0;
+      padding: 0;
+    }
+
+  }
+  //.img-product{
+  //width: 48%;
+  //height: 48%;
+ // }
+  //.img-product img{
+   // padding: 0;
+  //  margin: 0;
+   // height: auto;
+ //   width: fit-content; //*ajusta el ancho del contenedor por el de su contenido*/
+   // object-fit: contain; //*ajusta la imagen al contenedor*/
+    //?aspect-ratio: 1/1; //Considera el ancho de la caja antes de cargar la img*/
+ // }
+
+  @media (max-width: 768px) { // ! - - - - - - - - M E D I A   Q U E R Y   7 6 8 P - - - - - - - - 
     .text-banner{
       border-radius: 10px;
       padding-bottom: 2.2vw;
@@ -101,7 +224,6 @@ $green2 : #808000;
     padding: 2vw;
     padding-top: .8vw;
     padding-bottom: .8vw;
-      
       .ico-play{
         width: 5vw;
         height: auto;

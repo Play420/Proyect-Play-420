@@ -4,47 +4,11 @@ $green_dark : #022B20;
 $green1 : #19AC54;
 $green2 : #808000;
 
-.txt-portada{
-  color: $withe;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  max-width: 1024px;
-  height: auto;
-  margin-left: 2vw;
-  line-height:1.5 ;
-    h2{
-    margin: 0;
-    margin-top: 0vw;
-    margin-bottom: 1vw;
-  }
-  p{
-    margin: 0; 
-    margin-bottom: 1vw; 
-  }
-  ul{
-    border-left: 1px solid $green1;
-    margin: 0;
-    font-size: 14px;
-  }
-}
 
-.txt-video{
+.portada-video{ /* portada padre movies*/
   display: flex;
-  flex-direction: column;
-  margin: 2vw;
-}
-
-.img-portada{
-  width: 30vw;
-  height: auto;
-  border-radius: 15px;
-}
-
-.portada-video{
-  display: flex;
-  width: 90vw;
-  padding: 2vw;
+  width: 90%;
+  padding-top:10px ;
   margin-left: auto;
   margin-right: auto;
   flex-direction: row;
@@ -52,6 +16,54 @@ $green2 : #808000;
   align-items: center;
   justify-content: center;
 }
+.img-portada{/* hijo image de cada movie*/
+  width: 30vw;
+  height: auto;
+  border-radius: 8px;
+}
+.txt-portada{ /* hijo texto de cada movie */
+  color: $withe;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  width:70%;
+  max-width: 1200px;
+  height: auto;
+  margin-left: 2vw;
+  line-height: 1.2;
+  h2{
+    font-size: 2rem;
+    margin: 0;
+  }
+  p{
+    font-size: 1rem;
+    margin: 0; 
+    margin-bottom: 1vw; 
+  }
+  ul{
+    border-left: 1px solid $green1;
+    margin: 0;
+    font-size: 14px;
+    list-style-type: circle;
+  }
+}
+.txt-portada ul li::marker {
+  color: $green1;
+}
+.txt-portada ul :hover {
+  list-style-type: disc;
+  color: $green1;
+}
+
+
+
+.txt-video{
+  display: flex;
+  flex-direction: column;
+  margin: 2vw;
+}
+
+
 
 .h2 {
   display:flex ;
@@ -78,7 +90,7 @@ $green2 : #808000;
     height: auto;
     display: flex;
     align-items: center;
-    border-radius:  10px;
+    border-radius:  8px;
   }
   .EP{
     display: flex;
@@ -160,8 +172,8 @@ $green2 : #808000;
 }
 
 .movie:hover{
-  box-shadow: #19AC54 -0px 0px 5px 0px ;
-  transform: scale(1.03);
+  box-shadow: #19AC54 0px 0px 1px 1px ;
+  transform: scale(1.01);
 }
 
 .container-details{
@@ -187,7 +199,6 @@ $green2 : #808000;
 
 .buton-download{
   background-color: $green1;
-  color: $withe;
   text-decoration: none;
   margin-left: auto;
   margin-right: auto;
@@ -232,26 +243,28 @@ transform: scale(1.03);
   }
   
   .txt-descripcion{
-    font-size: 14px;
+    font-size: 1rem;
     margin: 0;
   }
   .img-portada{
-    width: 90vw;
+    width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 8px;
   }
   .txt-portada{
+    width: 100%;
     padding: 0;
     margin-left: auto;
     margin-right: auto;
     
     h2{
-      margin-top: 2vw;
-      margin-bottom: 2vw;
+      margin:0;
+      padding-top:10px;
     }
     p{
+      font-size: .9rem;
       text-align: left;
-      margin-bottom: 5vw;
+      margin-bottom: 2%;
       
     }
     ul{
@@ -306,14 +319,14 @@ transform: scale(1.03);
     display: flex;
     flex-direction: column;
     padding: 2vw;
-    border-radius: 5px;
-    border: 1px solid $green1;
+    border-radius: 8px;
+    box-shadow: #19AC54 -0px 0px 1px .3px ;
     margin-top: 2vw;
     color: $withe;
     height: auto;
   }
   .movie:hover{
-    box-shadow: #19AC54 -0px 0px 5px 0px ;
+    box-shadow: #19AC54 -0px 0px .3px .3px ;
   }
   
   .episode{

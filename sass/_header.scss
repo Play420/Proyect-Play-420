@@ -5,87 +5,89 @@ $green_dark : #022B20;
 $green1 : #19AC54;
 $green2 : #808000;
 
+main{
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 header{
   display:flex;
   top: 0;
   position: sticky;
   z-index: 1;
-  justify-content:space-around;
+  justify-content:center;
   align-items: center;
   background-color: rgb(7, 0, 12,.7);
-  backdrop-filter: blur(5px);
-  a{
-    margin-top: .3vw;
-    padding:0;
-  }
-  .logo{
-    width:7vw; 
-    height: auto;
-    margin: auto;
-    
-  }
-  // .logo2{
-  //   display: none;
-  // }
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 5px;
+
   
+    .logo{
+    width:25px; 
+    height: auto;
+    margin: 5px 25px;
+  }
   
 
 .botones{
   width: auto;
   height: auto;
-  font-size: 13px;
-  
-  
+  font-size: .9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   .button-header{
     height: auto;
     width: auto;
     background-color: $green1;
     color: $black;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 0px $green1;
     transition-property: all;
     transform: scale(1);
-    font-weight: bold;
+    
     text-decoration: none;
-    padding-left: 1vw;
-    padding-right: 1vw;
-    margin-left: 1vw;
-    margin-right: 1vw;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    padding-left: 8px;
+    padding-right: 8px;
+    
     }
     .button-header:hover{
       color:$withe;      
       font-weight: bold;
       background: rgb(7, 0, 12, .5);
-    border: $green1 .1px solid;
+      box-shadow: #19AC54 0px 0px 1px 1px;
     transition-duration: 0.25;
     transform: scale(1.03);
     }
     
     
 }
+
+
 @media(max-width: 800px){
   .botones{
     width: auto;
-  height: auto;
+    height: auto;
     .button-header{
       width: auto;
       height: auto;
     }
   }
-  // .logo{
-  //   display: none;
-  // }
-  .logo{
-    display: block;
-    width: 20vw;
-    height: auto;
-  }
+  
 }
+}
+
+#back-boton {
+  position:fixed;
+  top: 20%;
+  left: 5%;
 }
 @media (max-width: 768px) { 
-  header{
-    padding: 1vh;
-  }
   .botones{
     width: auto;
   height: auto;
@@ -94,13 +96,7 @@ header{
       height: auto;
     }
   }
-  .logo{
-    display: block;
-    width: 15vw;
-    margin:auto;
-    height: auto;
-    
-  }
+  
 }
 
 @media(max-width: 480px){
@@ -113,6 +109,7 @@ header{
       height: auto;
     }
   }
+  
   
 }
 

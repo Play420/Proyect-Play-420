@@ -1,0 +1,21 @@
+Aqui esta la lista de trabajo ( work map )
+  !  need one list 
+  EStructura de las paginas necesarias
+    -index
+      estructura de carrete el 100
+      adaptar el nuevo diseño de wireframe ( Slide horizontal con img verticales 3:4 )
+      considerar una seccion conteniendo img, txt y btn. con la img grande y el texto abajo con el botón estylo cinepolis
+      
+      peliculas (section)
+        html con todos los links compuestos, adaptar nuevo diseño
+
+    -series (cada uno )
+    -peliculas (cada uno )
+
+  IMAGES
+  Optimizar las imagenes para webp
+    -compress (cada html)
+    -WEBP (cada html)
+    
+    -convert a webp y comprimir (1920 x 0180  /  3) para miniaturas, y /2 para redes sociales y  original para youtube
+    -aspect-ratio: 9:16    

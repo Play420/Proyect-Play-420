@@ -7,23 +7,19 @@ $green2 : #808000;
 footer{
   display: flex;
   align-items: center;
-    justify-content: center;
-    flex-direction: row;
-  width: 95vw;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
   height: auto;
-  
-  background-image: linear-gradient(to top, rgb(25, 172, 84,.2),rgb(7, 0, 12),transparent);
-  //border-bottom: 5px $black solid;
+  background-image: linear-gradient(0deg, #19AC5430,transparent);
+  border-bottom: 3px #19AC5480 solid;
+  border-radius: 8px;
   //backdrop-filter: blur(5px);
   margin:auto;
-  margin-bottom:1vw;
-  border-radius: 1vw;
-
   .content-footer{
-    display: flex;
-    justify-content: center;    
+  display: flex;
+  justify-content: center;
   }
-
   .icon-social{
     width: 5vh;
     margin-right: 2vh;
@@ -33,7 +29,6 @@ footer{
     transition-property: all;
     transform: scale(1);
   }
-
   .icon-social:hover{
     box-shadow: #19AC54 0px 1px 1px -1px;
     transition-duration: 0.25;

@@ -4,33 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/assets/img/1x/play.png" type="image/x-icon">
+    <link href="../../assets/ico/D-W-buton.webp"rel="shortcut icon" type="image/x-icon">
+    <link href="../../assets/ico/D-W-buton.webp" rel="apple-touch-icon">
     <link rel="stylesheet" href="/sass/play420.css">
-    <link rel="shortcut icon" href="/assets/img/1x/play.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/ico/D-W-buton.webp" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <title>Saw X | Play 420</title>
 </head>
 <body>
-  <header class="header" id="header">
-    <a type="button"  href="/index.html" >
-        <img  class="logo" src="/assets/img/ico.png" alt="logo">
-    </a>
-    <div class="botones">
-        <a href="/peliculas.html"class="button-header" src="/peliculas.html">
-                <font>
-                    Peliculas
-                </font>
-        </a>
-        <a href="/series.html" class="button-header">
-                <font>
-                    Series
-                </font>
-        </a>
-    </div>
-</header>
-  <main>
+    <header class="header" id="header"><!--E N C A B E Z A D O--> 
+        <a href="../../peliculas.html" id="back-boton"><img src="../../assets/ico/L-W-buton.webp" alt=""></a>
+        <div class="botones" >
+            <a href="../../peliculas.html" class="button-header"><font>Peliculas</font></a>
+            <a type="button"  href="../../index.html" ><img  class="logo" src="../../assets/ico/D-G-buton.webp" alt="logo"></a>
+            <a href="../../series.html" class="button-header"><font>Series</font></a>
+        </div>        
+    </header>
+    <main>
     <article>
       <section>
         <!--P O R T A D A-->
@@ -82,11 +74,11 @@
             
         </div>
         <div class="slides">
-            <button id="slideBack" type="button"><img src="/assets/ico/1x/greenizqboton.png" alt=""> </button>
-            <button id="slide" type="button"> <img src="/assets/ico/1x/greenderboton.png" alt=""></button>
+            <button id="slideBack" type="button"><img src="/assets/ico/L-G-buton.webp" alt=""> </button>
+            <button id="slide" type="button"> <img src="/assets/ico/D-G-buton.webp" alt=""></button>
         </div>
-      </section>
-      <section><!--download section-->
+    </section>
+    <section><!--download section-->
         <div class="movie" >
             <div class="img.details">
                 <a href="https://exe.io/sawx" target="_blank">
@@ -108,8 +100,8 @@
                 </p>
             </div>
         </div>
-      </section>
-      <section id="scroll-horizontal" >
+    </section>
+    <section id="scroll-horizontal" >
         <h3 class="txt-scroll">
             •Para ti:
         </h3>
@@ -169,33 +161,29 @@
         </div>
     </div>
 </footer>
-    <script>
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-            var currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos) {
-                document.getElementById("header").style.top = "0";
-            }
-            else {
-                document.getElementById("header").style.top = "-50px";
-            }
-            prevScrollpos = currentScrollPos;
-        }
-        
-    </script>
-    <script>
+<script> var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+    document.getElementById("header").style.top = "0";
+    }
+    else {
+    document.getElementById("header").style.top = "-50px";
+    }
+    prevScrollpos = currentScrollPos;
+    }
+</script>
+<script>
 var button = document.getElementById('slide');
 button.onclick = function () {
     var container = document.getElementById('container');
     sideScroll(container,'right',25,325,85);
 };
-
 var back = document.getElementById('slideBack');
 back.onclick = function () {
     var container = document.getElementById('container');
     sideScroll(container,'left',25,325,85);
 };
-
 function sideScroll(element,direction,speed,distance,step){
     var scrollAmount = 0; 
     var slideTimer = setInterval(function(){
@@ -207,10 +195,8 @@ function sideScroll(element,direction,speed,distance,step){
         scrollAmount += step;
         if(scrollAmount >= distance){
             window.clearInterval(slideTimer);
-        
         }
-    },speed);
-}
-    </script>
+    },speed);}
+</script>
 </body>
 </html>

@@ -1,0 +1,82 @@
+//* LISTA DE COLORES PARA WEB PLAY420 - - - - - - - - - - - - - - 
+$black : #07000c;
+$withe : #E8F7D7;
+$green_dark : #022B20;
+$green1 : #19AC54;
+$green2 : #808000;
+
+//* TERCERA SECCIONEN INDEX (SECTION CINE ) - - - - - - - - - - - - - 
+
+.cine{
+  max-width: 1200px;
+  width: 90%;
+  height: auto;
+  margin: 50px auto;
+  padding: 0;
+}
+
+.container-cine{
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.mov{
+  width: 46.5%;
+  padding: 10px;
+  border-radius: 8px;
+  
+  h2{ padding: 0; margin:0; margin-top: 15%; color: $withe; 
+    background-color: rgb(7, 0, 12,.1);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);}
+  p{
+    padding: 0;
+    margin: 10px auto;
+    color: $withe;
+    font-weight: 700;
+    background-color: rgb(7, 0, 12,.1);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  }
+}
+#mov1{
+  background-image: url(/peliculas/leo/assets/portada.webp);
+  background-size: cover;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+}
+#mov2{
+  background-image: url(/peliculas/buddygames/assets/portada.webp);
+  background-size: cover;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+}
+#mov3{
+  background-image: url(/peliculas/puertamagica/assets/portada.webp);
+  background-size: cover;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+}
+#mov4{
+  background-image: url(/peliculas/fnaf/assets/portada.webp);
+  background-size: cover;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+@media (max-width: 468px) {  
+  .container-cine{
+    flex-wrap: wrap;
+    justify-content: center;
+    .mov{
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+
+}
+

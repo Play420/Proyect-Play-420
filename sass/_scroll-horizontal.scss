@@ -7,7 +7,8 @@ $green2 : #808000;
 
 #scroll-horizontal{
   margin-top: 5vw;
-  width: 90vw;
+  width: 90%;
+  max-width: 1200px;
   height: auto;
   margin-left: auto;
 margin-right: auto;
@@ -50,7 +51,7 @@ border-radius: 1vw;
 
   
   img{
-    background: #000;
+  background: #000;
   display: flex;
   width: 19vw;
   height: auto;
@@ -66,39 +67,45 @@ border-radius: 1vw;
 //     }
 
 .txt{
-  margin-left: 11vh;
-display: flex;
-justify-content:start ;
-color: floralwhite;
+  margin: 0;
+  padding: 0;
+  margin-left: 5%;
+  display: flex;
+  color: $withe;
+  font-size: 1rem;
+  font-weight: 840;
+  justify-content:start ;
 }
 
 .txt-scroll{
+  font-size: 1rem;
   color: $withe;
   
   
 }
 
 
-//Scroll Horizontal Con Botones - - - - - - - - - - - -
-
+//! - - - - - - - - - - - - - - Scroll Horizontal Con Botones - - - - - - - - - - - -
 
 .container{
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2vw;
-  width: 90vw;
+  width: 90%;
   height: auto;
   overflow-x: auto;
   display: flex;
-
+  //?scroll-snap-type: both mandatory; 
+  //?scroll-behavior: smooth;
   
-
   img{
     display: flex;
-    width: 50vw;
+    width:50vw;
+    height: auto;
     flex-wrap: nowrap;
     flex-direction: row;
+   //?scroll-snap-align:start; (efecto de galeria en un scroll x o y)
   }
 }
 

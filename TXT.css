@@ -1,0 +1,23 @@
+Aqui esta la lista de trabajo ( work map )
+  /* !  need one list */ 
+  EStructura de las paginas necesarias
+    /index
+      °Estructura de carrete el 100
+      °Adaptar el nuevo diseño de wireframe ( Slide horizontal con img verticales 3:4 )
+      °Considerar una seccion conteniendo img, txt y btn. con la img grande y el texto abajo con el botón estylo   
+       cinepolis
+      °Make a div top footer wiht box of info of the cards (download section)
+      
+    /series (cada uno )
+      °botón de banner principal a redireccionar
+    /peliculas (cada uno )
+      °botón de banner principal a redireccionar
+        
+
+  IMAGES
+  Optimizar las imagenes para webp
+    -compress (cada html)
+    -WEBP (cada html)
+    
+    -convert a webp y comprimir (1920 x 0180  /  3) para miniaturas, /2 para redes sociales y  /1 para youtube
+    -aspect-ratio: 9:16    

@@ -504,7 +504,7 @@ footer {
   width: 100%;
   height: auto;
   background-image: linear-gradient(0deg, rgba(25, 172, 84, 0.1882352941), transparent);
-  border-bottom: 3px rgba(25, 172, 84, 0.5019607843) solid;
+  border-bottom: 3px rgba(25, 172, 84, 0.6) solid;
   border-radius: 8px;
   margin: auto;
 }
@@ -682,9 +682,9 @@ footer .icon-social:hover {
 
 .dot {
   display: inline-block;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
+  width: 13px;
+  height: 11px;
+  border-radius: 8px;
   box-shadow: #E8F7D7 0px 0px 1px 1px;
   margin: 0 5px;
   cursor: pointer;
@@ -697,7 +697,8 @@ footer .icon-social:hover {
 
 .dot.active {
   background-color: #19AC54;
-  box-shadow: #19AC54 0px 0px 1px 1px;
+  box-shadow: #19AC54 0px 0px 0px 0px;
+  height: 13px;
 }
 
 .product {
@@ -1015,6 +1016,26 @@ footer .icon-social:hover {
     margin: 10px 0;
   }
 }
+.sec-cat-var {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  overflow-x: scroll;
+}
+.sec-cat-var a {
+  text-decoration: none;
+  display: block;
+  margin: 0 1%;
+}
+.sec-cat-var .detail {
+  padding: 3px;
+}
+
+.sec-cat-var::-webkit-scrollbar {
+  display: none;
+}
+
 .banner {
   background-image: url(/assets/img/Pattern-style-background-with-geometrics-borders--highlighting-the-theme-of-weed-and-play-icons-of-movies--with-a-crude-and-bizarre-accen\ \(8\).jpg);
   background-size: 100% auto;
@@ -1160,9 +1181,9 @@ footer .icon-social:hover {
 
 .dot {
   display: inline-block;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
+  width: 13px;
+  height: 11px;
+  border-radius: 8px;
   box-shadow: #E8F7D7 0px 0px 1px 1px;
   margin: 0 5px;
   cursor: pointer;
@@ -1175,7 +1196,8 @@ footer .icon-social:hover {
 
 .dot.active {
   background-color: #19AC54;
-  box-shadow: #19AC54 0px 0px 1px 1px;
+  box-shadow: #19AC54 0px 0px 0px 0px;
+  height: 13px;
 }
 
 .product {
